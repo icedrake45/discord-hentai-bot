@@ -1,0 +1,13 @@
+{
+    "name": "hentai-bot",
+    "version": "1.0.0",
+    "description": "A discord bot which will display hentai images using commands",
+    "main": "index.js",
+    "type": "module",
+    "dependencies": {
+        "discord.js": "^14.6.0",
+        "dotenv": "^16.0.3",
+        "akaneko": "^5.2.3"
+    },
+    "author": "icedrake45"
+}
