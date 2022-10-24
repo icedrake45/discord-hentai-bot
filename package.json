@@ -7,7 +7,7 @@
     "dependencies": {
         "discord.js": "^14.6.0",
         "dotenv": "^16.0.3",
-        "akaneko": "^5.2.3"
+        "hmfull": "^2.4.1"
     },
     "author": "icedrake45"
 }
