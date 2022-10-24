@@ -1,5 +1,9 @@
 import { Events } from 'discord.js';
 
+/**
+ * Emitted when an interaction is created.
+ * https://discord.com/developers/docs/interactions/receiving-and-responding
+ */
 export const name = Events.InteractionCreate;
 export async function execute(interaction) {
     if (!interaction.isChatInputCommand()) return;
