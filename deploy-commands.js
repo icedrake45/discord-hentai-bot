@@ -41,13 +41,11 @@ async function deployCommands() {
     }
 }
 
-async function gatherAndDeployCommands() {
+(async function () {
     try {
         await gatherCommands();
         await deployCommands();
     } catch (error) {
         console.log(error);
-    }  
-}
-
-gatherAndDeployCommands();
+    }
+})();
