@@ -57,14 +57,17 @@ async function registerClientEventListeners() {
 	}
 }
 
-async function clientLogin() {
+(async function () {
 	try {
-		await collectCommands();
-		await registerClientEventListeners();
+		const commandsPromise = collectCommands();
+		const eventListenersPromise = registerClientEventListeners();
+
+		await commandsPromise;
+		await eventListenersPromise;
+		
 		client.login(process.env.DISCORD_TOKEN);
 	} catch (error) {
 		console.log(error);
 	}
-}
 
-clientLogin();
+})();
