@@ -41,6 +41,16 @@ async function deployCommands() {
     }
 }
 
+//Delete guild-based commands
+/*async function deleteCommand() {
+    try {
+        await rest.delete(Routes.applicationGuildCommand(process.env.APP_ID, process.env.GUILD_ID, 'commandId'));
+        console.log('Sucessfully deleted guild command.');
+    } catch (error) {
+        throw error;
+    }
+}*/
+
 (async function () {
     try {
         await gatherCommands();
