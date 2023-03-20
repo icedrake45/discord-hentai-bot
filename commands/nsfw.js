@@ -20,7 +20,7 @@ export const data = new SlashCommandBuilder()
 
 export async function execute (interaction) {
     try {
-        //Retrieve the user's choice and run the associated function from 'choiceActions'
+        //Retrieve the user's choice and fetch the associated url from 'choiceActions'
         const choice = interaction.options.getString('content');
         const response = await fetch(choiceActions[choice]);
         const content = await response.json();
